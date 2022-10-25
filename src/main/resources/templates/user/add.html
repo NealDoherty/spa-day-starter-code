@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+
+<h1>Create User</h1>
+
+<form method = 'post'>
+    <div>
+        <label for="username">* Username:</label>
+        <input type = 'text' name = 'username' id="username" >
+    </div>
+
+    <div>
+        <label for="email">* Email:</label>
+        <input type = 'text' name = 'email' id="email" type="email">
+    </div>
+
+    <div>
+        <label for="password">* Password:</label>
+        <input type = 'text' name = 'password' id="password" type="password">
+    </div>
+
+    <div>
+        <label for="confirmPassword">* Confirm Password:</label>
+        <input type = 'text' name = 'password' id="confirmPassword" type="password" >
+    </div>
+
+    <div>
+        <input type = 'submit' value = 'Create User' >
+    </div>
+</form>
+</body>
+</html>
